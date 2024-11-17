@@ -1,4 +1,4 @@
-# Proyecto React T
+# React
 
 Proyecto de prueba realizado en **React**, que simula una vista de login y una vista de home, con manejo de validaciones, estados, y navegación.
 
