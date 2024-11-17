@@ -1,6 +1,6 @@
 # Proyecto React T
 
-Este es un proyecto de prueba realizado en **React**, que simula una vista de login y una vista de home, con manejo de validaciones, estados, y navegación.
+Proyecto de prueba realizado en **React**, que simula una vista de login y una vista de home, con manejo de validaciones, estados, y navegación.
 
 ### 1. **API Utilizada:**
 
