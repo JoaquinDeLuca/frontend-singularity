@@ -1,0 +1,33 @@
+.bgHero {
+    background-image: url("../../../../assets/images/bg-hero-2.svg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.imageContainer {
+    flex-shrink: 0;
+    background-color: var(--tertiary-color);
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    position: relative;
+    bottom: -50%;
+}
+
+.imageDog {
+    position: absolute;
+    top: -38.3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    z-index: 1;
+}
+
+@media (width > 1024px) {
+    .imageContainer {
+        width: 380px;
+        height: 380px;
+        position: relative;
+        margin-bottom: 3rem;
+    }
+}

@@ -1,0 +1,8 @@
+@media (width > 768px) {
+    .bg {
+        background-image: url("../../../../assets/images/path.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 10%;
+    }
+}

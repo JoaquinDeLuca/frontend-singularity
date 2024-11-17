@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --max-width: 1536px;
+    --primary-color: #ff6752;
+    --secondary-color: #4487ff;
+    --tertiary-color: #ffe530;
+    --quaternary-color: #f3f6fb;
+    --white-color: #ffffff;
+    --gray-color: #808080;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* scroll  */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--quaternary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+
+.sections-container {
+    position: relative;
+    background: url('./assets/images/half-circle-2.svg') no-repeat right center,
+    var(--quaternary-color);
+    background-size: contain;
+}
+
+.sections-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+.sections-container-2{
+    background-color: var(--quaternary-color);
+}
+
+
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+    background-image: url("./assets/images/circle.svg");
+    background-color: var(--quaternary-color);
+    background-position: center;
+    height: 100vh;
+}
+
+
+@media (width > 1024px) {
+    .sections-container-2{
+        position: relative;
+        background: url('./assets/images/curve-2.svg') no-repeat right top,
+        var(--quaternary-color);
+        background-size: cover;
+    }
+    
+    .sections-container-2  > * {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+  

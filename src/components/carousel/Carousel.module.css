@@ -1,0 +1,72 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    max-width: 90%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card {
+    width: 480px;
+    height: 300px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative;
+    z-index: 1;
+    opacity: 0.8;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.carouselBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 1rem;
+}
+
+.next {
+    right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .cardsContainer {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        transform: none;
+        opacity: 1;
+    }
+
+    .carouselBtn {
+        width: 30px;
+        height: 30px;
+    }
+}
